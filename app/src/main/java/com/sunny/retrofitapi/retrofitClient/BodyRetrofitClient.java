@@ -4,6 +4,7 @@ import androidx.constraintlayout.widget.Placeholder;
 
 import com.sunny.retrofitapi.BodyApi;
 import com.sunny.retrofitapi.apiInterface.bodyInterface;
+import com.sunny.retrofitapi.model.ImageModel;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -14,6 +15,8 @@ public class BodyRetrofitClient {
 
     private static BodyRetrofitClient instance = null;
     private bodyInterface myApi;
+
+    private ImageModel image;
 
     private BodyRetrofitClient(){
         Retrofit retrofit = new Retrofit.Builder()
