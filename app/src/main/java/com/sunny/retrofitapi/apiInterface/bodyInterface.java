@@ -2,6 +2,7 @@ package com.sunny.retrofitapi.apiInterface;
 
 import androidx.core.view.accessibility.AccessibilityEventCompat;
 
+import com.sunny.retrofitapi.model.AnotherModel;
 import com.sunny.retrofitapi.model.BodyModel;
 import com.sunny.retrofitapi.model.ImageModel;
 
@@ -17,5 +18,8 @@ public interface bodyInterface {
 
     @GET ("users")
     Call<List<ImageModel>> imageholder();
+
+    @GET ("posts/1")
+    Call<AnotherModel> anotherholder();
 
 }

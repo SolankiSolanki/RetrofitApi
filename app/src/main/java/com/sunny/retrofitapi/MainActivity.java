@@ -28,5 +28,12 @@ ActivityMainBinding binding;
                 startActivity(new Intent(getApplicationContext(),ImageApi.class));
             }
         });
+
+        binding.anotherApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AnotherApi.class));
+            }
+        });
     }
 }

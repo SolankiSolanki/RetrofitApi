@@ -16,6 +16,9 @@
         android:theme="@style/Theme.RetrofitApi"
         tools:targetApi="31">
         <activity
+            android:name=".AnotherApi"
+            android:exported="false" />
+        <activity
             android:name=".ImageApi"
             android:exported="false" />
         <activity

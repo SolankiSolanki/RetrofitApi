@@ -16,7 +16,6 @@ public class BodyRetrofitClient {
     private static BodyRetrofitClient instance = null;
     private bodyInterface myApi;
 
-    private ImageModel image;
 
     private BodyRetrofitClient(){
         Retrofit retrofit = new Retrofit.Builder()
